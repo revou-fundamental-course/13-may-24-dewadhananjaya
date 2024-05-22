@@ -1,0 +1,96 @@
+/* ini CSS */
+
+body {
+    font-family: Arial, sans-serif; /* Ketika browser tidak dapat menemukan font yang ditentukan, ia akan mencari font alternatif yang disebutkan setelahnya. jika browser tidak dapat menemukan Arial, maka akan mencari font sans-serif sebagai penggantinya. Ini membantu memastikan bahwa teks akan ditampilkan dengan font yang diinginkan oleh desainer, asalkan font tersebut tersedia di perangkat pengguna. */
+    margin: 20px; /* Properti ini mengatur ruang di sekitar elemen. Jadi, dengan kode margin: 20px;, elemen tersebut akan memiliki jarak 20 piksel di sekitar semua sisi (atas, kanan, bawah, kiri). Ini memungkinkan untuk memberikan ruang di sekitar elemen untuk meningkatkan tata letak halaman web dan memisahkan elemen-elemen satu sama lain. */
+}
+
+.formula {
+    font-weight: bold; /* Properti ini mengatur ketebalan (tebal) teks dalam elemen dengan kelas .formula menjadi tebal atau bold. */
+    background-color: #ecf0f1; /* Properti ini menetapkan warna latar belakang dari elemen .formula menjadi #ecf0f1, yang merupakan kode warna untuk warna abu-abu kebiruan yang lembut. */
+    padding: 10px; /* Properti ini menambahkan ruang di sekitar isi dalam elemen .formula sebesar 10 piksel. Ruang ini diberikan di antara isi elemen dan batasnya. */
+    border-radius: 5px; /* Properti ini memberikan lengkungan pada sudut-sudut elemen .formula, sehingga membuatnya memiliki sudut-sudut yang lebih lembut. Dalam hal ini, sudut-sudut akan memiliki radius lengkungan sebesar 5 piksel. */
+    display: inline-block; /* Properti ini mengatur elemen .formula untuk ditampilkan sebagai inline-block. Ini memungkinkan elemen tersebut untuk memiliki lebar dan tinggi yang dapat diatur, serta dapat ditempatkan dalam baris yang sama dengan elemen-elemen lain tetapi masih mempertahankan sifat bloknya seperti dapat menerima properti lebar, tinggi, dan margin. */
+}
+
+.section-content {
+    background-color: chocolate; /* Properti ini menetapkan warna latar belakang elemen .section-content menjadi cokelat. */
+    color: white; /* Properti ini mengatur warna teks dalam elemen .section-content menjadi putih. Ini membantu dalam kontras dengan latar belakang cokelat untuk meningkatkan keterbacaan. */
+
+    /* Properti-properti ini menambahkan ruang polos di bagian atas dan bawah elemen .section-content sebesar 8 piksel. Ini memastikan bahwa konten di dalam elemen tersebut tidak terlalu dekat dengan tepi atas atau bawahnya. */
+    padding-top: 8px; 
+    padding-bottom: 8px;
+
+    text-align: center; /* Properti ini mengatur teks di dalam elemen .section-content untuk dipusatkan secara horizontal. Ini membuat teks di dalam elemen tersebut terpusat di tengah. */
+}
+
+.section-content>h3{
+    margin: 0; /* Ini adalah aturan CSS yang menargetkan elemen <h3> yang berada langsung di dalam elemen dengan kelas .section-content. Properti margin: 0; menghilangkan margin (ruang) yang biasanya diberikan secara bawaan oleh browser pada elemen <h3>. Dengan mengatur margin menjadi 0, Anda memastikan bahwa tidak ada ruang tambahan di sekitar teks <h3> tersebut. */
+}
+
+.formula-img {
+    text-align: center; /* Ini adalah aturan CSS yang menargetkan elemen dengan kelas .formula-img. Properti text-align: center; digunakan untuk memusatkan teks di dalam elemen tersebut secara horizontal. Meskipun namanya adalah .formula-img, ini mungkin berlaku untuk teks atau elemen lain di dalamnya, tergantung pada struktur HTML-nya. */
+}
+
+img {
+    height: 200px; /* Ini adalah aturan CSS yang menargetkan semua elemen <img> dalam dokumen. Properti height: 200px; mengatur tinggi gambar menjadi 200 piksel. Dengan demikian, semua gambar akan memiliki tinggi yang sama, yaitu 200 piksel. Ini bisa berguna untuk menyesuaikan ukuran gambar agar seragam di dalam halaman web Anda. */
+}
+
+input {
+    background-color: bisque; /* Properti ini menetapkan warna latar belakang elemen input menjadi bisque, yaitu warna oranye pucat. */
+    border: 1px solid chocolate; /* Properti ini mengatur border (batas) elemen input menjadi 1 piksel tebal, solid (berupa garis lurus), dengan warna cokelat. */
+    border-radius: 4px; /* Properti ini memberikan sudut lengkung pada batas elemen input dengan radius 4 piksel, sehingga membuatnya memiliki sudut-sudut yang lebih lembut. */
+    width: 100%; /* Properti ini mengatur lebar elemen input menjadi 100% dari lebar elemen yang mengandungnya, sehingga elemen input akan mengisi seluruh lebar tersebut. */
+    padding: 4px; /* Properti ini menambahkan ruang di dalam elemen input sebesar 4 piksel. Ruang ini diberikan di antara teks input dan batasnya. */
+    font-family: sans-serif; /* mengatur jenis font yang akan digunakan untuk teks di dalam elemen yang ditargetkan menjadi jenis font sans-serif. */
+}
+
+form>button {
+    padding: 18px; /* Properti ini mengatur padding (ruang di dalam elemen) tombol sebesar 18 piksel di setiap sisi, sehingga membuat tombol memiliki ukuran yang lebih besar dan lebih mudah diklik. */
+    background-color: bisque; /* Properti ini menetapkan warna latar belakang tombol menjadi bisque, yang sama dengan warna latar belakang elemen input. */
+    border: 1px solid chocolate; /* Properti ini mengatur border (batas) tombol menjadi 1 piksel tebal, solid (berupa garis lurus), dengan warna cokelat, sama seperti yang digunakan untuk elemen input. */
+    border-radius: 18px; /* Properti ini memberikan sudut lengkung pada batas tombol dengan radius 18 piksel, sehingga membuatnya memiliki sudut-sudut yang sangat lembut. */
+}
+
+#hitung-btn {
+    background-color: rgb(187, 127, 255); /* Properti ini menetapkan warna latar belakang tombol dengan id hitung-btn menjadi warna ungu muda (ditentukan dalam nilai RGB). */
+    color: white; /* Properti ini mengatur warna teks pada tombol dengan id hitung-btn menjadi putih. */
+}
+
+#reset-btn {
+    background-color: cadetblue; /* Properti ini menetapkan warna latar belakang tombol dengan id reset-btn menjadi warna cadetblue, yaitu biru keabu-abuan. */
+    color: white; /* Properti ini mengatur warna teks pada tombol dengan id reset-btn menjadi putih. */
+}
+
+footer {
+    color: silver; /* Properti ini mengatur warna teks di dalam elemen <footer> menjadi warna silver (perak). */
+    text-align: center; /* Properti ini mengatur teks di dalam elemen <footer> untuk dipusatkan secara horizontal. */
+    padding: 5px; /* Properti ini menambahkan ruang polos di dalam elemen <footer> sebesar 5 piksel. */
+    border-radius: 15px; /* Properti ini memberikan sudut lengkung pada elemen <footer> dengan radius 15 piksel. */
+    background-color: brown; /* Properti ini menetapkan warna latar belakang elemen <footer> menjadi cokelat. */
+    bottom: 0; /* Properti ini memastikan bahwa footer ditempatkan di bagian bawah halaman. */
+    width: 100%; /* Properti ini mengatur lebar footer menjadi 100% dari lebar halaman, sehingga footer mengisi seluruh lebar halaman. */
+}
+
+.social-links {
+    display: flex; /* digunakan untuk membuat elemen .social-links menjadi sebuah flex container. Sebagai flex container, elemen .social-links akan mengatur child elements-nya dalam satu baris (secara default) dan memberikan kontrol tambahan terhadap penataan posisi dan ukuran mereka. */
+    justify-content: center; /*  akan membuat flex items (elemen-elemen di dalam .social-links) ditempatkan di tengah-tengah flex container secara horizontal. Artinya, jika ada ruang tambahan di sepanjang sumbu utama, elemen-elemen tersebut akan diatur sehingga posisi mereka berpusat. */
+    margin-top: 20px; /* Tambahan margin atas untuk ikon sosial */
+}
+
+.social-links a {
+    margin: 0 10px; /* Properti margin digunakan untuk mengatur ruang di sekitar elemen. Nilai 0 pada sisi atas dan bawah mengatur margin atas dan bawah elemen menjadi nol, sedangkan nilai 10px pada sisi kiri dan kanan mengatur margin kiri dan kanan elemen menjadi 10 piksel. Dengan kata lain, ini memberikan margin 10 piksel di sebelah kiri dan kanan elemen, sementara tidak ada margin di atas dan bawahnya. */
+    text-decoration: none; /* digunakan untuk menghapus semua dekorasi teks seperti garis bawah. Ini sering digunakan untuk menghilangkan garis bawah dari tautan (links) di dalam elemen a (<a>), sehingga tautan tersebut tidak terlihat seperti tautan yang biasa. */
+    color: white; /* memberikan warna putih */
+    transition: color 0.3s ease; /* efek transisi diterapkan pada perubahan warna (color) elemen. Transisi ini akan berlangsung selama 0.3 detik (0.3s) dengan fungsi waktu (ease) yang memberikan perpindahan yang halus antara nilai-nilai yang berubah. Jadi, ketika warna teks berubah, transisi akan membuat perubahan tersebut terlihat lebih halus. */
+    display: flex; /* Mengatur tautan menjadi flex container */
+    align-items: center; /* Menyusun ikon dan teks secara vertikal */
+}
+
+.social-links a svg {
+    margin-right: 5px; /* Memberikan jarak ke ikon di sebelah kanan */
+}
+
+.social-links a:hover {
+    color: #007bff; /* memberikan warna biru cerah */
+}
