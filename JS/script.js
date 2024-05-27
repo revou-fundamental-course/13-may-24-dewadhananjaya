@@ -3,8 +3,14 @@
 // Luas Segitiga 
 function hitungluas() {
     // Mengambil nilai dari input
-    const alas = document.getElementById('alas').value;
-    const tinggi = document.getElementById('tinggi').value;
+    const alas = parseFloat(document.getElementById('alas').value);
+    const tinggi = parseFloat(document.getElementById('tinggi').value);
+
+    // validasi input
+    if (isNaN(alas) || isNaN(tinggi)) {
+        alert('Kolom alas dan tinggi harus diisi dengan angka.');
+        return;
+    }
 
     // Menghitung luas segitiga
     const luas = 0.5 * alas * tinggi;
@@ -29,6 +35,12 @@ function hitungKeliling() {
     const sisiA = parseFloat(document.getElementById('sisiA').value);
     const sisiB = parseFloat(document.getElementById('sisiB').value);
     const sisiC = parseFloat(document.getElementById('sisiC').value);
+
+ // Validasi input
+ if (isNaN(sisiA) || isNaN(sisiB) || isNaN(sisiC)) {
+    alert('Mohon masukkan angka yang valid untuk semua sisi.');
+    return; // Menghentikan eksekusi jika ada input yang tidak valid
+}
 
 // Menghitung keliling
 const keliling = sisiA + sisiB + sisiC;
