@@ -94,3 +94,12 @@ footer {
 .social-links a:hover {
     color: #007bff; /* memberikan warna biru cerah */
 }
+
+/* responsif web */
+@media (max-width: 600px) {
+    button {
+        width: 100%; /* Tombol akan mengambil lebar penuh pada layar kecil */
+        margin-right: 0; /* Hilangkan margin kanan pada layar kecil */
+        margin-top: 10px; /* Tambahkan margin atas antara tombol */
+    }
+}
